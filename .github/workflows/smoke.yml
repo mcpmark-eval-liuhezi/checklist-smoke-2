@@ -1,0 +1,11 @@
+name: Smoke Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo smoke marker
+        run: echo "SMOKE_PIPELINE_CHECK_OK"
